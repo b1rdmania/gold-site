@@ -3,24 +3,22 @@
 <title>*~*~* G O L D *~*~* Do you believe?</title>
 <meta name="theme-color" content="#0a0a0a">
 <meta property="og:title" content="*~* GOLD *~* :: Do you believe? :: Trade Reality. Settle In Crypto.">
-<meta property="og:description" content="Do you believe? :: Experimental crypto trading products :: WAR MARKETS on Hyperliquid :: Click ENTER for the vibe!!">
+<meta property="og:description" content="Do you believe? :: Experimental financial products :: WAR MARKETS on Hyperliquid :: Click ENTER for the vibe!!">
 <meta property="og:image" content="og.png">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="*~* GOLD *~* :: Do you believe? :: Trade Reality. Settle In Crypto.">
-<meta name="twitter:description" content="Do you believe? :: Experimental crypto trading products :: WAR MARKETS on Hyperliquid :: Click ENTER for the vibe!!">
+<meta name="twitter:description" content="Do you believe? :: Experimental financial products :: WAR MARKETS on Hyperliquid :: Click ENTER for the vibe!!">
 <meta name="twitter:image" content="og.png">
 <script>
-// Cursor trail - gold $ signs
 var trail = [];
-var trailLength = 10;
 window.onload = function() {
-  for (var i = 0; i < trailLength; i++) {
+  for (var i = 0; i < 10; i++) {
     var s = document.createElement('div');
     s.innerHTML = '$';
-    s.style.cssText = 'position:fixed;pointer-events:none;font-size:' + (16 - i) + 'px;color:' +
-      ['#FFD700','#D4AF37','#FFA500','#FFD700','#D4AF37'][i % 5] +
-      ';z-index:9999;transition:all ' + (i * 0.05) + 's ease;font-weight:bold;font-family:Courier New;';
+    s.style.cssText = 'position:fixed;pointer-events:none;font-size:' + (16-i) + 'px;color:' +
+      ['#FFD700','#D4AF37','#FFA500','#FFD700','#D4AF37'][i%5] +
+      ';z-index:9999;transition:all ' + (i*0.05) + 's ease;font-weight:bold;font-family:Courier New;';
     document.body.appendChild(s);
     trail.push(s);
   }
@@ -29,7 +27,7 @@ document.addEventListener('mousemove', function(e) {
   if (!trail.length) return;
   trail[0].style.left = e.clientX + 'px';
   trail[0].style.top = e.clientY + 'px';
-  for (var i = trail.length - 1; i > 0; i--) {
+  for (var i = trail.length-1; i > 0; i--) {
     trail[i].style.left = trail[i-1].style.left;
     trail[i].style.top = trail[i-1].style.top;
   }
@@ -53,24 +51,15 @@ background="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='
 
 <br><br>
 
-<!-- GOLD BAR VIDEO -->
-<video autoplay loop muted playsinline width="500" style="display:block;margin:0 auto;">
+<center>
+<video autoplay loop muted playsinline width="500">
   <source src="gold-bar.webm" type="video/webm">
   <source src="gold-bar.mp4" type="video/mp4">
 </video>
-
-<br>
-
-<!-- FIRE FLANKING -->
-<img src="https://blob.gifcities.org/gifcities/4ZWHJUWAOBFM56J444WMIILMG7ZMVOP7.gif" width="80" height="65">
-&nbsp;&nbsp;&nbsp;
-<img src="https://blob.gifcities.org/gifcities/7YOVURK4KH6EHZD7QZYS32556WJSNETA.gif" width="50" height="50">
-&nbsp;&nbsp;&nbsp;
-<img src="https://blob.gifcities.org/gifcities/4ZWHJUWAOBFM56J444WMIILMG7ZMVOP7.gif" width="80" height="65">
+</center>
 
 <br><br>
 
-<!-- DO YOU BELIEVE -->
 <font face="Comic Sans MS, Papyrus, cursive" size="7" color="#FFD700">
 <b>Do you believe?</b>
 </font>
@@ -83,8 +72,7 @@ background="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='
 
 <br><br><br>
 
-<!-- ENTER BUTTON -->
-<a href="javascript:enter();" style="text-decoration:none;">
+<a href="javascript:enter();">
 <table border="3" bordercolor="#FFD700" cellpadding="16" cellspacing="0" bgcolor="#1a1500">
 <tr><td align="center">
 <font face="Comic Sans MS" size="5" color="#FFD700">
@@ -95,13 +83,6 @@ background="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='
 </a>
 
 <br><br><br>
-
-<!-- BOTTOM BADGES -->
-<img src="https://blob.gifcities.org/gifcities/4HBDYO222DAVGAKMVEPNKXCSM2N573Y2.gif" width="88" height="31">
-&nbsp;
-<img src="https://blob.gifcities.org/gifcities/BE74VKFT26W7XCTU3BNG3ZUSXQC6TEG4.gif" width="88" height="31">
-
-<br><br>
 
 <font face="Times New Roman" size="1" color="#333300">
 GOLD &copy; 2026 &nbsp;|&nbsp; "Trade reality. Settle in crypto." &nbsp;|&nbsp; Best viewed in Netscape Navigator 4.0
