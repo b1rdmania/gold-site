@@ -3,64 +3,56 @@
 <title>*~*~* G O L D *~*~* Trade Reality. Settle In Crypto. :: WallStreet/Area51 :: Est. 1998</title>
 <meta name="theme-color" content="#0a0a0a">
 <meta property="og:title" content="*~* GOLD *~* :: Trade Reality. Settle In Crypto. :: Experimental Crypto Products :: Est. 1998">
-<meta property="og:description" content="Experimental crypto trading products!! :: WAR MARKETS LIVE on Hyperliquid!! :: Trade Reality. Settle In Crypto. :: Click YES for the vibe!! Best viewed in Netscape 4.0">
+<meta property="og:description" content="Experimental crypto trading products!! :: WAR MARKETS LIVE on Hyperliquid!! :: Trade Reality. Settle In Crypto. :: Best viewed in Netscape 4.0">
 <meta property="og:image" content="og.png">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="*~* GOLD *~* :: Trade Reality. Settle In Crypto. :: Experimental Crypto Products :: Est. 1998">
-<meta name="twitter:description" content="Experimental crypto trading products!! :: WAR MARKETS LIVE on Hyperliquid!! :: Trade Reality. Settle In Crypto. :: Click YES for the vibe!! Best viewed in Netscape 4.0">
+<meta name="twitter:description" content="Experimental crypto trading products!! :: WAR MARKETS LIVE on Hyperliquid!! :: Trade Reality. Settle In Crypto. :: Best viewed in Netscape 4.0">
 <meta name="twitter:image" content="og.png">
 <script>
-var msg = "    ***  WELCOME TO GOLD  ***  Trade Reality. Settle In Crypto.  ***  WAR MARKETS LIVE ON HYPERLIQUID  ***  One thesis. One button. One position.  ***  Click YES for the vibe  ***  Visitor #";
-var counter = Math.floor(Math.random() * 9999) + 4269;
-msg += counter + "  ***    ";
+var msg = "    ***  GOLD  ***  Trade Reality. Settle In Crypto.  ***  WAR MARKETS LIVE ON HYPERLIQUID  ***  One thesis. One button. One position.  ***  Non-custodial. You keep control. Always.  ***    ";
 var pos = 0;
 function scrollStatus() {
   window.status = msg.substring(pos) + msg.substring(0, pos);
-  pos++;
-  if (pos > msg.length) pos = 0;
+  pos++; if (pos > msg.length) pos = 0;
   setTimeout(scrollStatus, 150);
 }
 scrollStatus();
 
 var trail = [];
-var trailLength = 12;
 window.onload = function() {
-  for (var i = 0; i < trailLength; i++) {
-    var star = document.createElement('div');
-    star.innerHTML = '$';
-    star.style.cssText = 'position:fixed;pointer-events:none;font-size:' +
-      (18 - i) + 'px;color:' +
-      ['#FFD700','#D4AF37','#FFA500','#FFD700','#FFFACD','#D4AF37'][i % 6] +
-      ';z-index:9999;transition:all ' + (i * 0.05) + 's ease;font-weight:bold;font-family:Courier New;';
-    document.body.appendChild(star);
-    trail.push(star);
+  for (var i = 0; i < 10; i++) {
+    var s = document.createElement('div');
+    s.innerHTML = '$';
+    s.style.cssText = 'position:fixed;pointer-events:none;font-size:' + (16-i) + 'px;color:' +
+      ['#FFD700','#D4AF37','#FFA500','#FFD700','#D4AF37'][i%5] +
+      ';z-index:9999;transition:all ' + (i*0.05) + 's ease;font-weight:bold;font-family:Courier New;';
+    document.body.appendChild(s);
+    trail.push(s);
   }
 };
 document.addEventListener('mousemove', function(e) {
-  if (trail.length == 0) return;
+  if (!trail.length) return;
   trail[0].style.left = e.clientX + 'px';
   trail[0].style.top = e.clientY + 'px';
-  for (var i = trail.length - 1; i > 0; i--) {
+  for (var i = trail.length-1; i > 0; i--) {
     trail[i].style.left = trail[i-1].style.left;
     trail[i].style.top = trail[i-1].style.top;
   }
 });
 
 document.oncontextmenu = function() {
-  alert("!! HANDS OFF !!\n\nDo NOT steal my HTML!!\nThis page is protected by the laws of the free market!!\n\n- The Webmaster");
+  alert("!! HANDS OFF !!\nThis page is protected by the laws of the free market!!\n- The Webmaster");
   return false;
 };
 
 var goldAudio = null;
 function playGold() {
-  if (!goldAudio) {
-    goldAudio = new Audio('background.mp3');
-    goldAudio.loop = true;
-  }
+  if (!goldAudio) { goldAudio = new Audio('background.mp3'); goldAudio.loop = true; }
   if (goldAudio.paused) {
     goldAudio.play();
-    document.getElementById('yesbtn').innerHTML = '&#9834; PLAYING... &#9834;<br><font size="1">click to stop</font>';
+    document.getElementById('yesbtn').innerHTML = '&#9834; PLAYING &#9834;';
   } else {
     goldAudio.pause();
     document.getElementById('yesbtn').innerHTML = '&gt;&gt; YES &lt;&lt;';
@@ -70,372 +62,328 @@ function playGold() {
 </head>
 
 <body bgcolor="#0a0a0a" text="#D4AF37" link="#FFD700" vlink="#FFA500" alink="#FFFFFF"
-background="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Crect width='4' height='4' fill='%230a0a0a'/%3E%3Crect x='0' y='0' width='1' height='1' fill='%23FFD700' opacity='0.06'/%3E%3Crect x='2' y='2' width='1' height='1' fill='%23D4AF37' opacity='0.04'/%3E%3C/svg%3E">
+background="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Crect width='4' height='4' fill='%230a0a0a'/%3E%3Crect x='0' y='0' width='1' height='1' fill='%23FFD700' opacity='0.05'/%3E%3Crect x='2' y='2' width='1' height='1' fill='%23D4AF37' opacity='0.03'/%3E%3C/svg%3E">
 
 <center>
 
-<video autoplay loop muted playsinline width="600" style="display:block;margin:0 auto;">
+<!-- HEADER STRIP -->
+<table border="0" cellpadding="0" cellspacing="0" width="700" bgcolor="#1a1500">
+<tr>
+<td width="200" align="center" style="padding:8px;">
+<img src="https://blob.gifcities.org/gifcities/4HVHH7B3KEFTKDAYM7XBBUU4Z4USJ4QZ.gif" width="25" height="25">
+<font face="Comic Sans MS" size="5" color="#FFD700"><b> G O L D </b></font>
+<img src="https://blob.gifcities.org/gifcities/4HVHH7B3KEFTKDAYM7XBBUU4Z4USJ4QZ.gif" width="25" height="25">
+</td>
+<td align="center" style="padding:8px;">
+<font face="Courier New" size="2" color="#999900">
+<a href="#about" style="color:#FFD700;">[ABOUT]</a>
+&nbsp;&nbsp;
+<a href="#warmarkets" style="color:#FFD700;">[WAR MARKETS]</a>
+&nbsp;&nbsp;
+<a href="#products" style="color:#FFD700;">[PRODUCTS]</a>
+&nbsp;&nbsp;
+<a href="#guestbook" style="color:#FFD700;">[GUESTBOOK]</a>
+</font>
+</td>
+<td width="120" align="center" style="padding:8px;">
+<a href="javascript:playGold();" style="text-decoration:none;">
+<font face="Comic Sans MS" size="3" color="#FFD700"><b><span id="yesbtn">&gt;&gt; YES &lt;&lt;</span></b></font>
+</a>
+</td>
+</tr>
+</table>
+
+<!-- MARQUEE -->
+<marquee behavior="scroll" direction="left" scrollamount="4" bgcolor="#0d0d00" style="border-top:1px solid #333300;border-bottom:1px solid #333300;padding:3px;">
+<font face="Courier New" size="2" color="#666600">
+*** GOLD *** TRADE REALITY *** SETTLE IN CRYPTO *** WAR MARKETS LIVE ON HYPERLIQUID *** PEAR PROTOCOL *** ONE THESIS. ONE BUTTON. ONE POSITION. *** NON-CUSTODIAL *** YOU KEEP CONTROL ALWAYS *** GOLD ***
+</font>
+</marquee>
+
+<br>
+
+<!-- MAIN GRID - 3 columns -->
+<table border="0" cellpadding="6" cellspacing="6" width="700">
+<tr valign="top">
+
+<!-- COL 1: ABOUT + YES -->
+<td width="210">
+
+<table border="2" bordercolor="#FFD700" cellpadding="10" cellspacing="0" bgcolor="#0d0d00" width="210">
+<tr bgcolor="#1a1500">
+<td align="center">
+<font face="Comic Sans MS" size="4" color="#FFD700"><b>~~ GOLD ~~</b></font>
+</td>
+</tr>
+<tr>
+<td>
+<img src="https://blob.gifcities.org/gifcities/XPKTKBIZ2W5KHOETNSXYZOG6JLNGKQF6.gif" width="40" height="40" align="right">
+<font face="Times New Roman" size="2" color="#D4AF37">
+Umbrella brand for experimental crypto trading products.
+<br><br>
+We turn real-world events into tradeable positions.
+<br><br>
+<font face="Courier New" size="2" color="#FFD700">"Trade reality.<br>Settle in crypto."</font>
+<br><br>
+<font size="2" color="#999900">Non-custodial.<br>Agent wallet.<br>You keep control.<br>Always.</font>
+</font>
+</td>
+</tr>
+<tr bgcolor="#0d0d00">
+<td align="center">
+<img src="https://blob.gifcities.org/gifcities/7YOVURK4KH6EHZD7QZYS32556WJSNETA.gif" width="35" height="35">
+<br>
+<font face="Courier New" size="1" color="#555500">built on</font><br>
+<font face="Courier New" size="2" color="#D4AF37"><b>PEAR PROTOCOL</b></font><br>
+<font face="Courier New" size="1" color="#555500">execution</font>
+<br><br>
+<font face="Courier New" size="2" color="#D4AF37"><b>HYPERLIQUID</b></font><br>
+<font face="Courier New" size="1" color="#555500">settlement</font>
+</td>
+</tr>
+</table>
+
+<br>
+
+<!-- VISITOR + DATE -->
+<table border="1" bordercolor="#333300" cellpadding="6" cellspacing="0" bgcolor="#0d0d00" width="210">
+<tr><td align="center">
+<font face="Courier New" size="1" color="#555500">visitor #</font>
+<font face="Courier New" size="2" color="#FFD700"><b><script>document.write(Math.floor(Math.random()*9999)+4269);</script></b></font>
+<img src="https://blob.gifcities.org/gifcities/4L6M2E4ETXXLJ54C4TVQII6ZFUIQDRCO.gif" width="60" height="14">
+<br>
+<font face="Courier New" size="1" color="#555500">last updated: Apr 6th 2026!!</font>
+<br>
+<img src="https://blob.gifcities.org/gifcities/3VTBFEMOXWXUH3PJYVKNKN4X4DLRL6FO.gif" width="40" height="20">
+<font face="Courier New" size="1" color="#999900"> War Markets LIVE</font>
+</td></tr>
+</table>
+
+</td>
+
+<!-- COL 2: WAR MARKETS (main feature) -->
+<td width="290">
+
+<a name="warmarkets"></a>
+<table border="3" bordercolor="#FFA500" cellpadding="12" cellspacing="0" bgcolor="#0d0900" width="290">
+<tr bgcolor="#1a0a00">
+<td align="center">
+<img src="https://blob.gifcities.org/gifcities/ACG2IQHELFKI53CGR3MUSXOQZVT4HO43.gif" width="40" height="40">
+<font face="Comic Sans MS" size="5" color="#FFA500"><b> WAR.MARKET </b></font>
+<img src="https://blob.gifcities.org/gifcities/ACG2IQHELFKI53CGR3MUSXOQZVT4HO43.gif" width="40" height="40">
+<br>
+<font face="Times New Roman" size="2" color="#999900"><i>The Global Tension Terminal</i></font>
+</td>
+</tr>
+<tr>
+<td>
+<img src="https://blob.gifcities.org/gifcities/32FMAPHPAT6BNANBKEAYVZDHBZBMYQPN.gif" width="40" height="40" align="right">
+<font face="Times New Roman" size="2" color="#D4AF37">
+Prediction markets on real-world events. Geopolitical narratives into leveraged positions on Hyperliquid.
+<br><br>
+</font>
+<font face="Courier New" size="2" color="#FFD700">
+LIVE MARKETS:<br>
+- Taiwan Strait &nbsp;&nbsp;&nbsp;(3x)<br>
+- AI Bubble Pop &nbsp;&nbsp;(2x)<br>
+- Oil Shock &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(3x)<br>
+- Risk On/Off &nbsp;&nbsp;&nbsp;&nbsp;(3x)<br>
+- The Flippening &nbsp;(3x)<br>
+- Solana Surge &nbsp;&nbsp;&nbsp;(3x)
+</font>
+<br><br>
+<font face="Times New Roman" size="1" color="#666600">
+Built on Pear Protocol. First app on their execution API. Won the Hyperliquid hackathon.
+</font>
+</td>
+</tr>
+<tr bgcolor="#1a0a00">
+<td align="center">
+<img src="https://blob.gifcities.org/gifcities/N7S3GUIK3IWUZ2UGXZGBSHIFMPEZLPC2.gif" width="30" height="30">
+&nbsp;
+<font face="Comic Sans MS" size="4">
+<b><a href="https://war.market" style="color:#FFD700;">ENTER THE WAR ROOM &gt;&gt;</a></b>
+</font>
+&nbsp;
+<img src="https://blob.gifcities.org/gifcities/N7S3GUIK3IWUZ2UGXZGBSHIFMPEZLPC2.gif" width="30" height="30">
+</td>
+</tr>
+</table>
+
+</td>
+
+<!-- COL 3: PRODUCTS + AWARDS -->
+<td width="178">
+
+<a name="products"></a>
+<table border="2" bordercolor="#FFD700" cellpadding="8" cellspacing="0" bgcolor="#0d0d00" width="178">
+<tr bgcolor="#1a1500">
+<td align="center">
+<font face="Comic Sans MS" size="3" color="#FFD700"><b>~~ PRODUCTS ~~</b></font>
+</td>
+</tr>
+<tr>
+<td>
+<img src="https://blob.gifcities.org/gifcities/N7S3GUIK3IWUZ2UGXZGBSHIFMPEZLPC2.gif" width="20" height="20">
+<font face="Courier New" size="2" color="#FFD700"><b><a href="https://war.market" style="color:#FFD700;">War Markets</a></b></font>
+<br>
+<font face="Courier New" size="1" color="#999900">&nbsp;&nbsp;LIVE NOW!!</font>
+</td>
+</tr>
+<tr>
+<td>
+<img src="https://blob.gifcities.org/gifcities/5SAYDEDXUAM7XUK5PSV4HZSGDHVNXS6R.gif" width="20" height="20">
+<font face="Courier New" size="2" color="#444400">Product 2</font>
+<br>
+<font face="Courier New" size="1" color="#333300">&nbsp;&nbsp;coming soon...</font>
+</td>
+</tr>
+<tr>
+<td>
+<img src="https://blob.gifcities.org/gifcities/6DXWFI7ZFVSKUHWTEWOJHT3JPC4U6JIJ.gif" width="20" height="20">
+<font face="Courier New" size="2" color="#444400">Product 3</font>
+<br>
+<font face="Courier New" size="1" color="#333300">&nbsp;&nbsp;coming soon...</font>
+</td>
+</tr>
+</table>
+
+<br>
+
+<table border="1" bordercolor="#333300" cellpadding="6" cellspacing="0" bgcolor="#0d0d00" width="178">
+<tr bgcolor="#1a1500">
+<td align="center">
+<font face="Comic Sans MS" size="3" color="#FFD700"><b>~~ AWARDS ~~</b></font>
+</td>
+</tr>
+<tr>
+<td align="center">
+<img src="https://blob.gifcities.org/gifcities/UD3BSOJI5JXU6IC7U66TB5CWK73I5BH3.gif" width="50" height="50"><br>
+<font face="Courier New" size="1" color="#FFD700">HACKATHON<br>WINNER!!</font>
+<br><br>
+<img src="https://blob.gifcities.org/gifcities/WMUDNVDHOTPX6NMLW72YVUASEYEKIDL4.gif" width="50" height="50"><br>
+<font face="Courier New" size="1" color="#FFD700">MOST DEGEN<br>2026</font>
+<br><br>
+<img src="https://blob.gifcities.org/gifcities/FD34DR5CQAHEL4A6WSBRABODHOICHW6O.gif" width="50" height="50"><br>
+<font face="Courier New" size="1" color="#FFD700">FIRST ON<br>PEAR PROTOCOL</font>
+</td>
+</tr>
+</table>
+
+<br>
+
+<table border="2" bordercolor="#FFD700" cellpadding="6" cellspacing="0" bgcolor="#0d0d00" width="178">
+<tr><td align="center">
+<font face="Times New Roman" size="1" color="#999900">
+click YES (top right)<br>to confirm you<br>understand what gold is
+</font>
+<br><br>
+<img src="https://blob.gifcities.org/gifcities/AHQ6INCZ745N4JZNTMBIHT6AB3HHLDGG.gif" width="40" height="40">
+</td></tr>
+</table>
+
+</td>
+
+</tr>
+</table>
+
+<!-- GUESTBOOK + UNDER CONSTRUCTION ROW -->
+<table border="0" cellpadding="6" cellspacing="6" width="700">
+<tr valign="top">
+
+<td width="360">
+<a name="guestbook"></a>
+<table border="1" bordercolor="#FFD700" cellpadding="10" cellspacing="0" bgcolor="#0d0d00" width="360">
+<tr bgcolor="#1a1500">
+<td align="center">
+<img src="https://blob.gifcities.org/gifcities/V2Z5E4J5MJPMJSUNJHEOC75TB4RDDXRB.gif" width="40" height="28">
+<font face="Comic Sans MS" size="3" color="#FFD700"><b> Guestbook!! </b></font>
+<img src="https://blob.gifcities.org/gifcities/VAYVGZSLN7E64C7XH5MSY5DUXWV7MFXZ.gif" width="40" height="28">
+</td>
+</tr>
+<tr><td>
+<font face="Times New Roman" size="2" color="#D4AF37">
+<b>Pear_Chad_99:</b> first app on Pear and they won the hackathon. BASED!!<br>
+<font color="#444400" size="1">-- HyperLiquid City, 1998</font>
+<br><br>
+<b>degen4life:</b> clicked YES and now i understand what gold is.<br>
+<font color="#444400" size="1">-- The War Room, 1998</font>
+<br><br>
+<b>NarrativeMaxi:</b> reality is the best market.<br>
+<font color="#444400" size="1">-- Pear Protocol HQ, 1998</font>
+</font>
+<br>
+<a href="mailto:webmaster@gold.services" style="color:#FFD700;">
+<img src="https://blob.gifcities.org/gifcities/5EOUGOZ66SPHEOBO526T5BMQBJHN4ZPE.gif" width="30" height="25">
+<font face="Courier New" size="1" color="#999900"> webmaster@gold.services</font>
+</a>
+</td></tr>
+</table>
+</td>
+
+<td width="318">
+<table border="2" bordercolor="#555500" cellpadding="10" cellspacing="0" bgcolor="#0d0d00" width="318">
+<tr bgcolor="#111100">
+<td align="center">
+<img src="https://blob.gifcities.org/gifcities/AETOJO542NSXFY7S2HQDPPBQ2LLT7NGO.gif" width="120" height="25">
+<br>
+<font face="Comic Sans MS" size="3" color="#FFD700">
+<blink>!! MORE PRODUCTS COMING !!</blink>
+</font>
+<br>
+<font face="Times New Roman" size="2" color="#666600">
+commodities... synthetic equities...<br>more narratives in development
+</font>
+<br>
+<img src="https://blob.gifcities.org/gifcities/E47ZJBID57WBH5ZXYB7SL2OCE22C5HH7.gif" width="120" height="25">
+</td>
+</tr>
+</table>
+
+<br>
+
+<!-- BADGES -->
+<img src="https://blob.gifcities.org/gifcities/4HBDYO222DAVGAKMVEPNKXCSM2N573Y2.gif" width="88" height="31">
+&nbsp;
+<img src="https://blob.gifcities.org/gifcities/BE74VKFT26W7XCTU3BNG3ZUSXQC6TEG4.gif" width="88" height="31">
+&nbsp;
+<img src="https://blob.gifcities.org/gifcities/CJIEUZFZSTRSPUMF57AOSTDGKKUXYB6H.gif" width="40" height="31">
+
+<br><br>
+
+<table border="1" bordercolor="#222200" cellpadding="4" cellspacing="0" bgcolor="#0d0d00" width="318">
+<tr><td align="center">
+<img src="https://blob.gifcities.org/gifcities/5TZQX2ODY2WJBEXXRF3PZYYIFVMS3MU4.gif" width="22" height="22">
+<font face="Courier New" size="1" color="#444400">
+[ <font color="#FFA500">Prev</font> ] <b><font color="#D4AF37">DeFi Degen WebRing</font></b> [ <font color="#FFA500">Next</font> ]
+</font>
+</td></tr>
+</table>
+
+</td>
+
+</tr>
+</table>
+
+<!-- GOLD BAR VIDEO - bottom -->
+<video autoplay loop muted playsinline width="700" style="display:block;margin:0 auto;">
   <source src="gold-bar.webm" type="video/webm">
   <source src="gold-bar.mp4" type="video/mp4">
 </video>
 
 <br>
 
-<img src="https://blob.gifcities.org/gifcities/4ZWHJUWAOBFM56J444WMIILMG7ZMVOP7.gif" width="100" height="75">
-<img src="https://blob.gifcities.org/gifcities/N7S3GUIK3IWUZ2UGXZGBSHIFMPEZLPC2.gif" width="60" height="60">
-<img src="https://blob.gifcities.org/gifcities/XPKTKBIZ2W5KHOETNSXYZOG6JLNGKQF6.gif" width="60" height="55">
-<img src="https://blob.gifcities.org/gifcities/AHQ6INCZ745N4JZNTMBIHT6AB3HHLDGG.gif" width="60" height="55">
-<img src="https://blob.gifcities.org/gifcities/XPKTKBIZ2W5KHOETNSXYZOG6JLNGKQF6.gif" width="60" height="55">
-<img src="https://blob.gifcities.org/gifcities/N7S3GUIK3IWUZ2UGXZGBSHIFMPEZLPC2.gif" width="60" height="60">
-<img src="https://blob.gifcities.org/gifcities/4ZWHJUWAOBFM56J444WMIILMG7ZMVOP7.gif" width="100" height="75">
+<!-- FIRE ROW -->
+<img src="https://blob.gifcities.org/gifcities/H2LWRZATSWRBEMGOTVQRYW4UCSBDBOOD.gif" width="60" height="55">
+<img src="https://blob.gifcities.org/gifcities/EGV3BAYR6OK3X63J4CBSJADOLYW4WGAN.gif" width="70" height="60">
+<img src="https://blob.gifcities.org/gifcities/4ZWHJUWAOBFM56J444WMIILMG7ZMVOP7.gif" width="90" height="70">
+<img src="https://blob.gifcities.org/gifcities/EGV3BAYR6OK3X63J4CBSJADOLYW4WGAN.gif" width="70" height="60">
+<img src="https://blob.gifcities.org/gifcities/H2LWRZATSWRBEMGOTVQRYW4UCSBDBOOD.gif" width="60" height="55">
 
 <br>
 
-<table border="3" bordercolor="#FFD700" cellpadding="15" cellspacing="0" bgcolor="#1a1500" width="600">
-<tr><td align="center">
-<img src="https://blob.gifcities.org/gifcities/4HVHH7B3KEFTKDAYM7XBBUU4Z4USJ4QZ.gif" width="40" height="40">
-<img src="https://blob.gifcities.org/gifcities/7YOVURK4KH6EHZD7QZYS32556WJSNETA.gif" width="50" height="50">
-<img src="https://blob.gifcities.org/gifcities/4HVHH7B3KEFTKDAYM7XBBUU4Z4USJ4QZ.gif" width="40" height="40">
-<br>
-<font face="Comic Sans MS, Papyrus, cursive" size="7" color="#FFD700">
-<b>*~*~* G O L D *~*~*</b>
-</font>
-<br>
-<font face="Times New Roman" size="4" color="#FFA500">
-<i>+:.*.:+ Trade Reality. Settle In Crypto. +:.*.+</i>
-</font>
-<br><br>
-<table border="0" cellpadding="0" cellspacing="5">
-<tr>
-<td bgcolor="#2a2000">
-<font face="Courier New" size="3" color="#FFD700">
-&nbsp;<b><a href="#warmarkets" style="color:#FFD700;text-decoration:none;">[ WAR MARKETS ]</a></b>&nbsp;
-</font>
-</td>
-<td>&nbsp;</td>
-<td bgcolor="#2a2000">
-<font face="Courier New" size="3" color="#FFD700">
-&nbsp;<b><a href="#about" style="color:#FFD700;text-decoration:none;">[ ABOUT GOLD ]</a></b>&nbsp;
-</font>
-</td>
-<td>&nbsp;</td>
-<td bgcolor="#2a2000">
-<font face="Courier New" size="3" color="#FFD700">
-&nbsp;<b><a href="#guestbook" style="color:#FFD700;text-decoration:none;">[ GUESTBOOK ]</a></b>&nbsp;
-</font>
-</td>
-</tr>
-</table>
-<br>
-<img src="https://blob.gifcities.org/gifcities/DSB6NSUDHALJR5PD5QU6AF22ZHD37DGB.gif" width="40" height="40">
-<img src="https://blob.gifcities.org/gifcities/5TZQX2ODY2WJBEXXRF3PZYYIFVMS3MU4.gif" width="35" height="35">
-<img src="https://blob.gifcities.org/gifcities/DSB6NSUDHALJR5PD5QU6AF22ZHD37DGB.gif" width="40" height="40">
-</td></tr>
-</table>
-
-<br>
-<img src="https://blob.gifcities.org/gifcities/3VTBFEMOXWXUH3PJYVKNKN4X4DLRL6FO.gif" width="60" height="30">
-<font face="Comic Sans MS" size="2" color="#D4AF37"> Last updated: April 6th 2026!! War Markets is LIVE!!</font>
-<img src="https://blob.gifcities.org/gifcities/BSCLWF2NA7VIOLNBHZ6APAYT674XMEZV.gif" width="60" height="30">
-
-<br><br>
-
-<marquee behavior="scroll" direction="left" scrollamount="5" bgcolor="#1a1500" style="border: 2px solid #FFD700; padding: 5px;">
-<font face="Courier New" size="3" color="#FFD700">
-*** GOLD *** TRADE REALITY *** SETTLE IN CRYPTO *** WAR MARKETS LIVE ON HYPERLIQUID *** BUILT ON PEAR PROTOCOL *** ONE THESIS. ONE BUTTON. ONE POSITION. *** NON-CUSTODIAL *** YOU KEEP CONTROL ALWAYS *** GOLD ***
-</font>
-</marquee>
-
-<br><br>
-
-<table border="0" cellpadding="0" cellspacing="12" width="600">
-<tr valign="top">
-
-<td width="155">
-
-<table border="2" bordercolor="#FFD700" cellpadding="8" cellspacing="0" width="155" bgcolor="#0d0d00">
-<tr bgcolor="#1a1500">
-<td align="center">
-<font face="Comic Sans MS" size="3" color="#FFD700"><b>~~ PRODUCTS ~~</b></font>
-</td>
-</tr>
-<tr bgcolor="#0d0d00">
-<td>
-<img src="https://blob.gifcities.org/gifcities/N7S3GUIK3IWUZ2UGXZGBSHIFMPEZLPC2.gif" width="22" height="22">
-<font face="Courier New" size="2" color="#FFD700">
-<b><a href="#warmarkets" style="color:#FFD700;">War Markets</a></b>
-</font>
-<br>
-<font face="Courier New" size="1" color="#999900">&nbsp;&nbsp;LIVE NOW!!</font>
-</td>
-</tr>
-<tr bgcolor="#0d0d00">
-<td>
-<img src="https://blob.gifcities.org/gifcities/6DXWFI7ZFVSKUHWTEWOJHT3JPC4U6JIJ.gif" width="22" height="22">
-<font face="Courier New" size="2" color="#555500">Product 2</font>
-<br>
-<font face="Courier New" size="1" color="#333300">&nbsp;&nbsp;coming soon...</font>
-</td>
-</tr>
-<tr bgcolor="#0d0d00">
-<td>
-<img src="https://blob.gifcities.org/gifcities/5SAYDEDXUAM7XUK5PSV4HZSGDHVNXS6R.gif" width="22" height="22">
-<font face="Courier New" size="2" color="#555500">Product 3</font>
-<br>
-<font face="Courier New" size="1" color="#333300">&nbsp;&nbsp;coming soon...</font>
-</td>
-</tr>
-</table>
-
-<br>
-
-<table border="2" bordercolor="#FFD700" cellpadding="8" cellspacing="0" width="155" bgcolor="#0d0d00">
-<tr bgcolor="#1a1500">
-<td align="center">
-<font face="Comic Sans MS" size="3" color="#FFD700"><b>~~ BUILT ON ~~</b></font>
-</td>
-</tr>
-<tr bgcolor="#0d0d00">
-<td align="center">
-<font face="Courier New" size="2" color="#D4AF37">
-<b>PEAR PROTOCOL</b><br>
-<font color="#666600">execution</font>
-</font>
-<br><br>
-<font face="Courier New" size="2" color="#D4AF37">
-<b>HYPERLIQUID</b><br>
-<font color="#666600">settlement</font>
-</font>
-</td>
-</tr>
-</table>
-
-<br>
-
-<table border="2" bordercolor="#FFD700" cellpadding="8" cellspacing="0" width="155" bgcolor="#0d0d00">
-<tr bgcolor="#1a1500">
-<td align="center">
-<font face="Comic Sans MS" size="2" color="#D4AF37"><b>~~ THE VIBE ~~</b></font>
-</td>
-</tr>
-<tr bgcolor="#0d0d00">
-<td align="center">
-<font face="Times New Roman" size="2" color="#999900">
-click YES to confirm you understand what gold is
-</font>
-<br><br>
-<a href="javascript:playGold();" style="text-decoration:none;">
-<table border="3" bordercolor="#FFD700" cellpadding="10" cellspacing="0" bgcolor="#2a2000" width="120">
-<tr><td align="center">
-<font face="Comic Sans MS" size="4" color="#FFD700"><b><span id="yesbtn">&gt;&gt; YES &lt;&lt;</span></b></font>
-</td></tr>
-</table>
-</a>
-</td>
-</tr>
-</table>
-
-</td>
-
-<td width="433">
-
-<a name="about"></a>
-<table border="2" bordercolor="#FFD700" cellpadding="10" cellspacing="0" bgcolor="#1a1500" width="433">
-<tr><td align="center">
-<font face="Comic Sans MS" size="5" color="#FFD700"><b>~~ WHAT IS GOLD?? ~~</b></font>
-</td></tr>
-</table>
-
-<table border="1" bordercolor="#2a2000" cellpadding="12" cellspacing="0" bgcolor="#0d0d00" width="433">
-<tr><td>
-<img src="https://blob.gifcities.org/gifcities/XPKTKBIZ2W5KHOETNSXYZOG6JLNGKQF6.gif" width="55" height="55" align="right">
-<font face="Times New Roman" size="3" color="#D4AF37">
-Gold is an umbrella brand for experimental crypto trading products.
-<br><br>
-We build products that turn real-world events into tradeable positions. No Bloomberg terminal. No prime broker. Just the signal and the settlement layer.
-<br><br>
-<font face="Courier New" size="3" color="#FFD700">"Trade reality. Settle in crypto."</font>
-<br><br>
-<font size="2" color="#999900">Non-custodial. Agent wallet. You keep control. Always.</font>
-</font>
-</td></tr>
-</table>
-
-<br>
-
-<img src="https://blob.gifcities.org/gifcities/GEBBHHAPXV63GEHL3AKX637HGEL3R6DV.gif" width="433" height="8">
-
-<br><br>
-
-<a name="warmarkets"></a>
-<table border="2" bordercolor="#FFA500" cellpadding="10" cellspacing="0" bgcolor="#1a0a00" width="433">
-<tr><td align="center">
-<img src="https://blob.gifcities.org/gifcities/ACG2IQHELFKI53CGR3MUSXOQZVT4HO43.gif" width="50" height="50">
-<font face="Comic Sans MS" size="5" color="#FFA500"><b>&nbsp;WAR MARKETS&nbsp;</b></font>
-<img src="https://blob.gifcities.org/gifcities/ACG2IQHELFKI53CGR3MUSXOQZVT4HO43.gif" width="50" height="50">
-</td></tr>
-</table>
-
-<table border="1" bordercolor="#2a1500" cellpadding="12" cellspacing="0" bgcolor="#0d0900" width="433">
-<tr><td>
-<img src="https://blob.gifcities.org/gifcities/32FMAPHPAT6BNANBKEAYVZDHBZBMYQPN.gif" width="50" height="50" align="right">
-<font face="Times New Roman" size="3" color="#D4AF37">
-<b><font color="#FFA500">The Global Tension Terminal.</font></b>
-<br><br>
-Prediction markets on real-world events. Geopolitical narratives turned into leveraged positions on Hyperliquid. One thesis. One button. One position.
-<br><br>
-<font face="Courier New" size="2" color="#FFD700">
-LIVE MARKETS:<br>
-- Taiwan Strait Crisis &nbsp;&nbsp;&nbsp;(3x)<br>
-- AI Bubble Pop &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(2x)<br>
-- Middle East Oil Shock &nbsp;(3x)<br>
-- Risk On / Risk Off &nbsp;&nbsp;&nbsp;&nbsp;(3x)<br>
-- The Flippening &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(3x)<br>
-- Solana Surge &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(3x)
-</font>
-<br><br>
-<font size="2" color="#999900">Built on Pear Protocol. First app on their execution API. Won the Hyperliquid hackathon.</font>
-<br><br>
-<img src="https://blob.gifcities.org/gifcities/3VTBFEMOXWXUH3PJYVKNKN4X4DLRL6FO.gif" width="40" height="20">
-&nbsp;
-<font face="Comic Sans MS" size="3">
-<b><a href="https://war.market" style="color:#FFD700;">ENTER THE WAR ROOM &gt;&gt;</a></b>
-</font>
-</font>
-</td></tr>
-</table>
-
-<br>
-
-<video autoplay loop muted playsinline width="433" style="display:block;">
-  <source src="gold-text.webm" type="video/webm">
-  <source src="gold-text.mp4" type="video/mp4">
-</video>
-
-<br>
-
-<img src="https://blob.gifcities.org/gifcities/B2TIOYJMZ6NV4YTWEKKSJZVBFY6AQ6MF.gif" width="433" height="12">
-
-<br><br>
-
-<table border="0" cellpadding="5" cellspacing="8">
-<tr>
-<td align="center">
-<img src="https://blob.gifcities.org/gifcities/UD3BSOJI5JXU6IC7U66TB5CWK73I5BH3.gif" width="80" height="80"><br>
-<font face="Courier New" size="1" color="#FFD700">HACKATHON<br>WINNER!!</font>
-</td>
-<td align="center">
-<img src="https://blob.gifcities.org/gifcities/FD34DR5CQAHEL4A6WSBRABODHOICHW6O.gif" width="80" height="80"><br>
-<font face="Courier New" size="1" color="#FFD700">FIRST APP<br>PEAR PROTOCOL</font>
-</td>
-<td align="center">
-<img src="https://blob.gifcities.org/gifcities/WMUDNVDHOTPX6NMLW72YVUASEYEKIDL4.gif" width="80" height="80"><br>
-<font face="Courier New" size="1" color="#FFD700">MOST DEGEN<br>2026</font>
-</td>
-<td align="center">
-<img src="https://blob.gifcities.org/gifcities/7YOVURK4KH6EHZD7QZYS32556WJSNETA.gif" width="80" height="80"><br>
-<font face="Courier New" size="1" color="#FFD700">SETTLE IN<br>CRYPTO</font>
-</td>
-</tr>
-</table>
-
-<br>
-
-<table border="2" bordercolor="#FFD700" cellpadding="10" cellspacing="0" bgcolor="#0d0d00" width="433">
-<tr><td align="center">
-<img src="https://blob.gifcities.org/gifcities/AETOJO542NSXFY7S2HQDPPBQ2LLT7NGO.gif" width="150" height="30">
-<br>
-<font face="Comic Sans MS" size="3" color="#FFD700">
-<blink>!! MORE PRODUCTS UNDER CONSTRUCTION !!</blink>
-</font>
-<br>
-<font face="Times New Roman" size="2" color="#999900">
-commodities... synthetic equities... more narratives coming<br>
-sorry it's not done yet. we're degens with a dream!!
-</font>
-<br>
-<img src="https://blob.gifcities.org/gifcities/E47ZJBID57WBH5ZXYB7SL2OCE22C5HH7.gif" width="150" height="30">
-</td></tr>
-</table>
-
-</td>
-</tr>
-</table>
-
-<br>
-
-<img src="https://blob.gifcities.org/gifcities/GEBBHHAPXV63GEHL3AKX637HGEL3R6DV.gif" width="600" height="8">
-
-<br><br>
-
-<a name="guestbook"></a>
-<table border="1" bordercolor="#FFD700" cellpadding="12" cellspacing="0" bgcolor="#0d0d00" width="500">
-<tr><td align="center">
-<img src="https://blob.gifcities.org/gifcities/V2Z5E4J5MJPMJSUNJHEOC75TB4RDDXRB.gif" width="60" height="40">
-<font face="Comic Sans MS" size="3" color="#FFD700"><b>&nbsp;Sign My Guestbook!!&nbsp;</b></font>
-<img src="https://blob.gifcities.org/gifcities/VAYVGZSLN7E64C7XH5MSY5DUXWV7MFXZ.gif" width="60" height="40">
-<br><br>
-<font face="Times New Roman" size="2" color="#D4AF37">
-<b>Pear_Chad_99:</b> first app on Pear Protocol and they won the hackathon. BASED!!!<br>
-<font color="#555500">-- posted from HyperLiquid City, 1998</font>
-<br><br>
-<b>degen4life:</b> clicked YES and now i understand what gold is. thank you webmaster.<br>
-<font color="#555500">-- posted from The War Room, 1998</font>
-<br><br>
-<b>NarrativeMaxi:</b> been waiting for someone to build this. reality is the best market.<br>
-<font color="#555500">-- posted from Pear Protocol HQ, 1998</font>
-<br><br>
-<b>TaiwanStrait_watcher:</b> opened a 3x position. this is the one.<br>
-<font color="#555500">-- posted from Area51/WallStreet, 1998</font>
-</font>
-<br><br>
-<a href="mailto:webmaster@gold.services" style="color:#FFD700;">
-<img src="https://blob.gifcities.org/gifcities/5EOUGOZ66SPHEOBO526T5BMQBJHN4ZPE.gif" width="50" height="40">
-<font face="Comic Sans MS" size="2" color="#FFA500"><b> Email: webmaster@gold.services</b></font>
-</a>
-</td></tr>
-</table>
-
-<br><br>
-
-<font face="Courier New" size="2" color="#555500">You are visitor number: </font>
-<font face="Courier New" size="3" color="#FFD700"><b><script>document.write(counter);</script></b></font>
-<img src="https://blob.gifcities.org/gifcities/4L6M2E4ETXXLJ54C4TVQII6ZFUIQDRCO.gif" width="80" height="18">
-
-<br><br>
-
-<img src="https://blob.gifcities.org/gifcities/H2LWRZATSWRBEMGOTVQRYW4UCSBDBOOD.gif" width="70" height="60">
-<img src="https://blob.gifcities.org/gifcities/EGV3BAYR6OK3X63J4CBSJADOLYW4WGAN.gif" width="80" height="65">
-<img src="https://blob.gifcities.org/gifcities/4ZWHJUWAOBFM56J444WMIILMG7ZMVOP7.gif" width="100" height="75">
-<img src="https://blob.gifcities.org/gifcities/EGV3BAYR6OK3X63J4CBSJADOLYW4WGAN.gif" width="80" height="65">
-<img src="https://blob.gifcities.org/gifcities/H2LWRZATSWRBEMGOTVQRYW4UCSBDBOOD.gif" width="70" height="60">
-
-<br><br>
-
-<img src="https://blob.gifcities.org/gifcities/4HBDYO222DAVGAKMVEPNKXCSM2N573Y2.gif" width="88" height="31">
-&nbsp;
-<img src="https://blob.gifcities.org/gifcities/BE74VKFT26W7XCTU3BNG3ZUSXQC6TEG4.gif" width="88" height="31">
-&nbsp;
-<img src="https://blob.gifcities.org/gifcities/AFCZ4HZS2GWJ7GXGDN7DCAFUXT73TGN3.gif" width="88" height="31">
-
-<br><br>
-
-<table border="1" bordercolor="#333300" cellpadding="5" cellspacing="0" bgcolor="#0d0d00" width="350">
-<tr><td align="center">
-<img src="https://blob.gifcities.org/gifcities/5TZQX2ODY2WJBEXXRF3PZYYIFVMS3MU4.gif" width="28" height="28">
-<font face="Courier New" size="2" color="#555500">
-&nbsp;[ <font color="#FFA500">Prev</font> ] <b><font color="#D4AF37">DeFi Degen WebRing</font></b> [ <font color="#FFA500">Next</font> ]
-</font>
-<br>
-<font face="Courier New" size="1" color="#333300">This site is part of the DeFi Degen WebRing. Want to join? Email the ringmaster.</font>
-</td></tr>
-</table>
-
-<br>
-
-<font face="Times New Roman" size="1" color="#333300">
-GOLD &copy; 2026 | gold.services | WallStreet/Area51/1337 | "Trade reality. Settle in crypto."<br>
-Best viewed in Netscape Navigator 4.0 at 800x600
+<font face="Times New Roman" size="1" color="#2a2a00">
+GOLD &copy; 2026 | gold.services | WallStreet/Area51/1337 | "Trade reality. Settle in crypto." | Best viewed in Netscape Navigator 4.0 at 800x600
 </font>
 
 <br><br>
